@@ -6,4 +6,4 @@ export function timeAgo(input) {
   return moment(input).fromNow();
 }
 
-export default Ember.Handlebars.makeBoundHelper(timeAgo);
+export default Ember.Helper.helper(timeAgo);

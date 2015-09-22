@@ -1,6 +1,7 @@
-import DjangoSerializer from './django';
+import DRFSerializer from './drf';
 
-export default DjangoSerializer.extend({
+export default DRFSerializer.extend({
+
     serializeHasMany: function(record, json, relationship) {
     if (relationship.options.polymorphic) {
       // TODO implement once it's implemented in DS.JSONSerializer
@@ -17,4 +18,5 @@ export default DjangoSerializer.extend({
         json[json_key] = record.get(key).mapBy('id');
       }
   },
+
 });

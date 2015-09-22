@@ -14,6 +14,7 @@ var app = new EmberApp({
 });
 
 
+app.import('bower_components/ember/ember-template-compiler.js');
 app.import('bower_components/ember-selectize/src/ember.selectize.js');
 app.import('bower_components/ember-forms/dist/globals/main.js');
 app.import('bower_components/jquery.cookie/jquery.cookie.js');

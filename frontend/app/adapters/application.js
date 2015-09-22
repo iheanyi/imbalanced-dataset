@@ -1,6 +1,4 @@
-//import DS from 'ember-data';
-import DjangoAdapter from './django';
+import DRFAdapter from './drf';
 
-export default DjangoAdapter.extend({
-
+export default DRFAdapter.extend({
 });
